@@ -9,25 +9,25 @@
 </head>
 <body>
 	<header class="header">
-		<h1 id="title">aysedemirel Github Account Project Search Survey Form</h1>
-		<p id="description"> Thank you for taking the time to help me improve the account</p>
+		<h1 id="title" class="text-center">aysedemirel Github Account Project Search Survey Form</h1>
+		<p id="description" class="text-center"> Thank you for taking the time to help me improve the account</p>
 	</header>
-	<form>
+	<form id="survey-form">
 		<div class="form-group">
 			<label id="name-label">Name</label>
-			<input type="text" name="name" placeholder="Enter your name" required>
+			<input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
 		</div>
 		<div class="form-group">
 			<label id="email-label">Email</label>
-			<input type="email" name="email" placeholder="Enter your email" required>
+			<input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
 		</div>
 		<div class="form-group">
-			<label id="age-label">Age(Optional)</label>
-			<input type="number" min="1" max="200" name="age" placeholder="Enter your age">
+			<label id="number-label">Age<span class="clue">(Optional)</span></label>
+			<input id="number" class="form-control" type="number" min="1" max="200" name="age" placeholder="Enter your age">
 		</div>
 		<div class="form-group">
 			<p>Which option best describes your current role ?</p>
-			<select name="role" required>
+			<select class="form-control" name="role" required>
 				<option disabled selected value>Select current role</option>
 				<option value="student">Student</option>
 				<option value="fullJob">Full Time Job</option>
@@ -38,38 +38,38 @@
 			</select>
 		</div>
 		<div class="form-group">
-			<p>Would you recomment <a href="" target="_blank">@aysedemirel</a> GitHub account to a friend?</p>
+			<p>Would you recomment <a class="link" href="https://github.com/aysedemirel" target="_blank">@aysedemirel</a> GitHub account to a friend?</p>
 			<label>
-				<input name="friend-recommend" value="definitely" type="radio" checked>
+				<input class="input-radio" name="friend-recommend" value="definitely" type="radio" checked>
 				Definitely
 			</label>
 			<label>
-				<input name="friend-recommend" value="maybe" type="radio" checked>
+				<input class="input-radio" name="friend-recommend" value="maybe" type="radio" checked>
 				Maybe
 			</label>
 			<label>
-				<input name="friend-recommend" value="not-sure" type="radio" checked>
+				<input class="input-radio" name="friend-recommend" value="not-sure" type="radio" checked>
 				Not Sure
 			</label>
 		</div>
 		<div class="form-group">
-			<p>Would you recomment <a href="" target="_blank">aysedemirel.github.io</a> to a friend?</p>
+			<p>Would you recomment <a class="link" href="https://aysedemirel.github.io/" target="_blank">aysedemirel.github.io</a> to a friend?</p>
 			<label>
-				<input name="friend-recommend" value="definitely" type="radio" checked>
+				<input class="input-radio-site" name="friend-recommend-site" value="definitely" type="radio" checked>
 				Definitely
 			</label>
 			<label>
-				<input name="friend-recommend" value="maybe" type="radio" checked>
+				<input class="input-radio-site" name= "friend-recommend-site" value="maybe" type="radio" checked>
 				Maybe
 			</label>
 			<label>
-				<input name="friend-recommend" value="not-sure" type="radio" checked>
+				<input class="input-radio-site" name="friend-recommend-site" value="not-sure" type="radio" checked>
 				Not Sure
 			</label>
 		</div>
 		<div class="form-group">
-			<p>What is your favorite feature of <a href="" target="_blank">@aysedemirel</a> GitHub account ?</p>
-			<select name="favorite" required>
+			<p>What is your favorite feature of <a class="link" href="https://github.com/aysedemirel" target="_blank">@aysedemirel</a> GitHub account ?</p>
+			<select id="dropdown" class="form-control" name="favorite" required>
 				<option disabled selected value>Select an option</option>
 				<option value="java">Java Repositories</option>
 				<option value="c-plus-plus">C++ Repositories</option>
@@ -82,82 +82,82 @@
 		</div>
 		<div class="form-group">
 			<p>
-				What would you like to see improved on <a href="" target="_blank">@aysedemirel</a> GitHub account ?
-			   <span>(Check all that apply)</span>
+				What would you like to see improved on <a class="link" href="https://github.com/aysedemirel" target="_blank">@aysedemirel</a> GitHub account ?
+			   <span class="clue">(Check all that apply)</span>
 			</p>
 			<label>
-				<input type="checkbox" name="prefer" value="front-end-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="front-end-project">
 				Front-end Project
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="back-end-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="back-end-project">
 				Back-end Project
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="machine-learning-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="machine-learning-project">
 				Machine Learning
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="data-visualization-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="data-visualization-project">
 				Data Visualization
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="image-processing-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="image-processing-project">
 				Image Processing
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="python-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="python-project">
 				Python Project
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="java-project">
+				<input class="input-checkbox" type="checkbox" name="prefer" value="java-project">
 				Java Project
 			</label>
 		</div>
 		<div class="form-group">
 			<p>
-				What would you like to see improved on <a href="" target="_blank">aysedemirel.github.io</a>?
-			   <span>(Check all that apply)</span>
+				What would you like to see improved on <a class="link" href="https://aysedemirel.github.io/" target="_blank">aysedemirel.github.io</a>?
+			   <span class="clue">(Check all that apply)</span>
 			</p>
 			<label>
-				<input type="checkbox" name="prefer" value="front-end-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="front-end-blog">
 				Front-end Blog
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="back-end-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="back-end-blog">
 				Back-end Project
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="machine-learning-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="machine-learning-blog">
 				Machine Blog 
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="data-visualization-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="data-visualization-blog">
 				Data Visualization Blog
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="image-processing-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="image-processing-blog">
 				Image Processing Blog
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="python-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="python-blog">
 				Python Blog
 			</label>
 			<label>
-				<input type="checkbox" name="prefer" value="java-blog">
+				<input class="input-checkbox-site" type="checkbox" name="prefer" value="java-blog">
 				Java Blog
 			</label>
 		</div>
 		<div class="form-group">
 			<p>Any project idea?</p>
-			<textarea id="project-ideas" name="project-idea" placeholder="Enter your project idea here..."></textarea>
+			<textarea id="project-ideas" class="input-textarea-idea" name="project-idea" placeholder="Enter your project idea here..."></textarea>
 		</div>
 		<div class="form-group">
 			<p>Any comments or suggestion?</p>
-			<textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+			<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
 		</div>
 		<div class="form-group">
-			<button type="submit" id="submit">Submit</button>
+			<button id="submit" class="submit-button" type="submit">Submit</button>
 		</div>
 	</form>
 </body>
